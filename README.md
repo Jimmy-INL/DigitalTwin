@@ -30,5 +30,6 @@ We use a semantic segmentation approach to build a model that could accurately p
 
 Below is an example of how the model, input data and the output data look like. 
 
+![Algorithm](s1.png)
 
 
