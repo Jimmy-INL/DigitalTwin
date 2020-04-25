@@ -21,7 +21,12 @@ Our first step is to build an approximation to the current simulator which takes
 ## Assumptions
 1. In order to build a model to approximate the simulator, we need to build a model that takes in a tile/part of a map with information like ```number of users in the location```, ```how many base stations are present```, ``` locations of those base stations``` and ``` Hight of several buildings in the location```.  
 2. However, it is still difficult to find a ```uplink throughput```, ```downlink throughput``` value for each user as the number of users keep changing in a geographical region and it is difficult to build a model whose output shape is changing constantly. 
-3. 
+3. Hence, we discretize the entire tile/map before passing into the model. We discretize the entire map into a NxN small grids and thus predict a ```uplink throughput``` and ```downlink throughput``` for each grid square. 
+4. We assume that each user in that specific grid will share the same throughput value. Thus, rather than predicting a throughput value for each user, we will instead predict throughput for each square grid. 
+
+
+## Model 
+We build a 
 
 
 
