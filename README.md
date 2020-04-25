@@ -26,7 +26,9 @@ Our first step is to build an approximation to the current simulator which takes
 
 
 ## Model 
-We build a 
+We use a semantic segmentation approach to build a model that could accurately predict the throughput values for every NxN square grid in the map. More specifically, we use a U-Net Architecture to predict the ```uplink throughput``` and ```downlink throughput``` values for each grid in the map. 
+
+Below is an example of how the model, input data and the output data look like. 
 
 
 
