@@ -19,8 +19,9 @@ The current simulator takes a large amount of time to produce the throughput for
 Our first step is to build an approximation to the current simulator which takes a large amount of time to process and produces throughput values for a user. We are trying to find, can we reduce the amount of time the simulator takes in order generate throughput values for all the users. If we can reduce that time to real-time then trying several potential locations for a new base stations will be faster. 
 
 ## Assumptions
-1. We are 
-
+1. In order to build a model to approximate the simulator, we need to build a model that takes in a tile/part of a map with information like ```number of users in the location```, ```how many base stations are present```, ``` locations of those base stations``` and ``` Hight of several buildings in the location```.  
+2. However, it is still difficult to find a ```uplink throughput```, ```downlink throughput``` value for each user as the number of users keep changing in a geographical region and it is difficult to build a model whose output shape is changing constantly. 
+3. 
 
 
 
