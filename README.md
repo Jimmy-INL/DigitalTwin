@@ -39,3 +39,17 @@ We used the below UNet architecture after modifying it by including BatchNormali
 
 ![Algorithm](model.png)
 
+## Results
+We have trained the above architecture for ~250 epochs with a batch size of 16. The optimizer used was ```NADAM``` and a ```L1 loss```. The metrics that we used to compare the performance were ```mean_absolute_error```, ```mean_squared_error```, ```rmse``` and ```r_square```.
+
+We were able to achieve a good performance after 250 epochs. We used earlystopping with a patience of 5. Below are the results on validation data. 
+
+**val_loss**: 0.3631
+**val_mean_absolute_error**: 0.0150
+**val_mean_squared_error**: 0.0039
+**val_rmse**: 0.0177
+**val_r_square**: 0.7029
+
+Below are the plots for RMSE and R-square. 
+
+![Algorithm](d1.png)          ![Algorithm](d2.png)
