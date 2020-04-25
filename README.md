@@ -34,4 +34,8 @@ Below is an example of how the model, input data and the output data look like.
 ![Algorithm](s2.png)
 ![Algorithm](s3.png)
 
+## U-Net Architecture
+We used the below UNet architecture after modifying it by including BatchNormalization for faster training and changing the input and output shape of the model. 
+
+![Algorithm](model.png)
 
